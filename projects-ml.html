@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects | Bhagya Patel</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .modal {
+      display: none;
+      position: fixed;
+      top: 0; left: 0;
+      width: 30%; height: 50%;
+      /* background: rgba(0, 0, 0, 0.7); */
+      justify-content: center;
+      align-items: center;
+      z-index: 1000;
+    }
+/* Responsive project card layout */
+.responsive-card .card-wrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.project-image img {
+  max-width: 100%;
+  height: auto;
+ 
+  border-radius: 10px;
+}
+
+.project-image {
+  flex: 1;
+  max-width: 50%;
+  height: 100%;
+}
+
+.project-content {
+  flex: 1;
+}
+
+/* Mobile View: Stack image and content vertically */
+@media (max-width: 768px) {
+  .responsive-card .card-wrapper {
+    flex-direction: column;
+  }
+
+  .project-image,
+  .project-content {
+    max-width: 100%;
+  }
+}
+
+    .modal-content {
+      position: relative;
+      background:transparent;
+      padding: 20px;
+      border-radius: 10px;
+      /* max-width: 90%;
+      max-height: 80%; */
+    }
+
+    .modal-content iframe {
+      width: 100%;
+      height: 400px;
+    }
+
+    .close-btn {
+      position: absolute;
+      top: -28px;
+      right: -28px;
+      font-size: 24px;
+      background: transparent;
+      border: none;
+      cursor: pointer;
+    }
+
+    .project-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="container nav-content">
+      <div class="logo"><a href="index.html#home">Bhagya Patel</a></div>
+      <ul class="nav-links">
+        <li><a href="index.html#home">Home</a></li>
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="index.html#achievements">Achievements</a></li>
+        <li><a href="index.html#experience">Experience</a></li>
+        <li class="dropdown">
+          <a href="#projects">Projects <i class="fas fa-chevron-down"></i></a>
+          <ul class="submenu">
+            <li><a href="projects-web.html">Frontend / Backend Projects</a></li>
+            <li><a href="projects-ai.html">AI Projects</a></li>
+            <li><a href="projects-ml.html">Machine Learning / Deep Learning</a></li>
+          </ul>
+        </li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+<br/>
+  <!-- Projects Section -->
+  <section id="projects" class="projects">
+    <div class="container">
+      <h3 style="text-align:center;">Machine Learning / Deep Learning</h3>
+      <div class="project-grid">
+
+        <!-- Project 1 -->
+        <div class="project-card responsive-card">
+    <div class="card-wrapper">
+          <div class="project-image">
+            <img src="diamond.jpg" alt="Client Sentiment Tracker" class="show-image">
+          </div>
+          <div class="project-content">
+            <h3 style="text-align:center;">Diamond-Price-Predictor</h3>
+            <p><b>This project aims to develop a scalable and consistent pricing system using advanced
+              machine learning models. By automating the valuation process, I seek to revolutionize the
+              diamond industry, which is traditionally dependent on subjective and time-intensive manual
+              appraisals.</b></p>
+              <p><b>In the diamond industry, pricing traditionally relies on human expertise, leading to
+
+                inconsistencies and inefficiencies. This project leverages machine learning to provide a data-
+                driven solution, ensuring consistent and objective pricing.</b></p>
+   
+            <!-- <h4 style="text-align:center;">Key Features & Workflow</h4>
+            <ul>
+              <li>User Feedback Submission under three categories</li>
+              <li>Admin Dashboard & Response Management</li>
+              <li>Real-Time Query Tracking with Token ID</li>
+              <li>Interactive Graphical Reports for Business Insights</li>
+            </ul> -->
+            <div style="text-align:center; margin-top:20px;">
+              <button class="video-btn" onclick="openModal('diamond.mp4')">🎥 Live Video Demo</button>
+            </div>
+          </div>
+        </div>
+        </div>
+
+       
+        <!-- Project 3 -->
+        <div class="project-card responsive-card">
+    <div class="card-wrapper">
+          <div class="project-image">
+            <img src="14.jpg" alt="Another Project Showcase" class="show-image">
+          </div>
+          <div class="project-content">
+            <h3 style="text-align:center;">Vehicle-Valuation-Hub</h3>
+            <p><b>Developed a web-based Vehicle Valuation Hub predicting market prices for used cars. Uses ML
+              models analyzing make, model, year, mileage, and fuel type for precise estimations.</b></p>
+            <hr><br>
+            <h4 style="text-align:center;">What this project does?</h4>
+            <ul>
+           <li>   This project takes the parameters of an used car like: Company name, Model name, Year of
+Purchase, Fuel Type and Number of Kilometers it has been driven.</li>
+
+<li>
+It then predicts the possible price of the car. For example, the image below shows the predicted
+price of our Hyundai Grand i10.
+</li>
+            </ul>
+            <div style="text-align:center; margin-top:20px;">
+              <button class="video-btn" onclick="openModal('Vehicle.mp4')">🎥 Live Video Demo</button>
+            </div>
+          </div>
+        </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Modal Template -->
+  <div id="videoModal" class="modal">
+    <div class="modal-content">
+      <button class="close-btn" onclick="closeModal()">×</button>
+      <iframe id="modalVideo" src="" allowfullscreen></iframe>
+    </div>
+  </div>
+
+  <!-- JavaScript -->
+  <script>
+    function openModal(videoSrc) {
+      const modal = document.getElementById("videoModal");
+      const iframe = document.getElementById("modalVideo");
+      iframe.src = videoSrc;
+      modal.style.display = "flex";
+    }
+
+    function closeModal() {
+      const modal = document.getElementById("videoModal");
+      const iframe = document.getElementById("modalVideo");
+      iframe.src = "";
+      modal.style.display = "none";
+    }
+  </script>
+</body>
+
+</html>

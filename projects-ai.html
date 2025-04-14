@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects | Bhagya Patel</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .modal {
+      display: none;
+      position: fixed;
+      top: 0; left: 0;
+      width: 30%; height: 50%;
+      /* background: rgba(0, 0, 0, 0.7); */
+      justify-content: center;
+      align-items: center;
+      z-index: 1000;
+    }
+/* Responsive project card layout */
+.responsive-card .card-wrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.project-image img {
+  max-width: 100%;
+  height: auto;
+ 
+  border-radius: 10px;
+}
+
+.project-image {
+  flex: 1;
+  max-width: 50%;
+  height: 100%;
+}
+
+.project-content {
+  flex: 1;
+}
+
+/* Mobile View: Stack image and content vertically */
+@media (max-width: 768px) {
+  .responsive-card .card-wrapper {
+    flex-direction: column;
+  }
+
+  .project-image,
+  .project-content {
+    max-width: 100%;
+  }
+}
+
+    .modal-content {
+      position: relative;
+      background:transparent;
+      padding: 20px;
+      border-radius: 10px;
+      /* max-width: 90%;
+      max-height: 80%; */
+    }
+
+    .modal-content iframe {
+      width: 100%;
+      height: 400px;
+    }
+
+    .close-btn {
+      position: absolute;
+      top: -28px;
+      right: -28px;
+      font-size: 24px;
+      background: transparent;
+      border: none;
+      cursor: pointer;
+    }
+
+    .project-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="container nav-content">
+      <div class="logo"><a href="index.html#home">Bhagya Patel</a></div>
+      <ul class="nav-links">
+        <li><a href="index.html#home">Home</a></li>
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="index.html#achievements">Achievements</a></li>
+        <li><a href="index.html#experience">Experience</a></li>
+        <li class="dropdown">
+          <a href="#projects">Projects <i class="fas fa-chevron-down"></i></a>
+          <ul class="submenu">
+            <li><a href="projects-web.html">Frontend / Backend Projects</a></li>
+            <li><a href="projects-ai.html">AI Projects</a></li>
+            <li><a href="projects-ml.html">Machine Learning / Deep Learning</a></li>
+          </ul>
+        </li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+<br/>
+  <!-- Projects Section -->
+  <section id="projects" class="projects">
+    <div class="container">
+      <h3 style="text-align:center;">AI Projects</h3>
+      <div class="project-grid">
+
+        <!-- Project 1 -->
+        <div class="project-card responsive-card">
+    <div class="card-wrapper">
+          <div class="project-image">
+            <img src="16.jpg" alt="Client Sentiment Tracker" class="show-image">
+          </div>
+          <div class="project-content">
+            <h3 style="text-align:center;">KarmAI AI Agent</h3>
+            <p><b>KarmAI is a multi AI agent system designed to control a computer based on user queries. The
+              system uses a hierarchical agent structure to break down complex tasks into simpler actions
+              handled by specialized agents.</b></p>
+              <p><b>KarmAI leverages a master-subordinate architecture to efficiently manage and execute
+                computer control tasks. With its dual-method screen analysis and dedicated agents for
+                keyboard and mouse control, the system is designed for accuracy and ease of use.</b></p>
+            <!-- <hr><br>
+            <h4 style="text-align:center;">Key Features & Workflow</h4>
+            <ul>
+              <li>User Feedback Submission under three categories</li>
+              <li>Admin Dashboard & Response Management</li>
+              <li>Real-Time Query Tracking with Token ID</li>
+              <li>Interactive Graphical Reports for Business Insights</li>
+            </ul> -->
+            <div style="text-align:center; margin-top:20px;">
+              <button class="video-btn" onclick="openModal('KarmAI.mp4')">🎥  Working  Demo</button>
+            </div>
+          </div>
+        </div>
+        </div>   
+          <!-- Project 1 -->
+        <div class="project-card responsive-card">
+    <div class="card-wrapper">
+          <div class="project-image">
+            <img src="15.jpg" alt="Client Sentiment Tracker" class="show-image">
+          </div>
+          <div class="project-content">
+            <h3 style="text-align:center;">NewsLens AI Powered Dashboard</h3>
+            <p><b>AI-Powered Global News Filtering Dashboard allows users to filter news based on date range, 4+
+              categories (Positive, Negative, Business, Technology), 5+ countries (India, USA, UK, Germany,
+              etc.), and a valid Gemini API Key, displaying relevant news.</b></p>
+              <p><b>Built an AI-Powered Global News Filtering Dashboard that filters news by category, date, and
+                country. Displays articles in an intuitive interface with detailed insights.</b></p>
+            <!-- <hr><br>
+            <h4 style="text-align:center;">Key Features & Workflow</h4>
+            <ul>
+              <li>User Feedback Submission under three categories</li>
+              <li>Admin Dashboard & Response Management</li>
+              <li>Real-Time Query Tracking with Token ID</li>
+              <li>Interactive Graphical Reports for Business Insights</li>
+            </ul> -->
+            <div style="text-align:center; margin-top:20px;">
+              <button class="video-btn" onclick="openModal('news.mp4')">🎥  Working  Demo</button>
+            </div>
+          </div>
+        </div>
+        </div>
+        <!-- Project 2 -->
+        <div class="project-card responsive-card">
+    <div class="card-wrapper">
+          <div class="project-image">
+            <img src="11.jpg"
+              alt="Smartnavigator">
+          </div>
+          <div class="project-content">
+            <h3 style="text-align:center;">AI Powered-Web Scraping Data Extraction System</h3>
+            <p><b>This repository contains a Python-based solution for automating web scraping, data extraction,
+              and reporting The script extracts structured data from websites, validates it using AI, and
+              generates reports in JSON and CSV formats.</b></p>
+            <hr><br>
+            <h4 style="text-align:center;">Key Features & Workflow</h4>
+            <ul>
+              <li>Web Scraping: Extract clean, structured content from websites</li>
+              <li>AI-Powered Data Extraction: Use this to extract specific fields like ratings, price, and review
+              summaries of any product from any e-commerce website.</li>
+              <li>JSON Validation: Ensure the extracted data is in the correct JSON format using retry logic.</li>
+           <li>CSV Export: Convert the results into a CSV file for easy analysis.</li>
+            </ul>
+            <!-- <div style="text-align:center; margin-top:20px;">
+              <button class="video-btn" onclick="openModal('p7.mp4')">🎥  Working  Demo</button>
+            </div> -->
+          </div>
+        </div>
+        </div>
+       
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Modal Template -->
+  <div id="videoModal" class="modal">
+    <div class="modal-content">
+      <button class="close-btn" onclick="closeModal()">×</button>
+      <iframe id="modalVideo" src="" allowfullscreen></iframe>
+    </div>
+  </div>
+
+  <!-- JavaScript -->
+  <script>
+    function openModal(videoSrc) {
+      const modal = document.getElementById("videoModal");
+      const iframe = document.getElementById("modalVideo");
+      iframe.src = videoSrc;
+      modal.style.display = "flex";
+    }
+
+    function closeModal() {
+      const modal = document.getElementById("videoModal");
+      const iframe = document.getElementById("modalVideo");
+      iframe.src = "";
+      modal.style.display = "none";
+    }
+  </script>
+</body>
+
+</html>
