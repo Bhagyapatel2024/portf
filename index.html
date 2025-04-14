@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bhagya Patel - Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="container nav-content">
+      <div class="logo"><a href="#home">Bhagya Patel</a></div>
+  
+      <!-- Hamburger Icon -->
+      <div class="hamburger" id="hamburger" onclick="toggleMenu()">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+  
+      <!-- Navigation Links -->
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#achievements">Achievements</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li class="dropdown">
+          <a href="#projects">Projects <i class="fas fa-chevron-down"></i></a>
+          <ul class="submenu">
+            <li><a href="projects-web.html">Frontend / Backend Projects</a></li>
+            <li><a href="projects-ai.html">AI Projects</a></li>
+            <li><a href="projects-ml.html">Machine Learning / Deep Learning Projects</a></li>
+            <!-- <li><a href="projects-group.html">Group Project</a></li> -->
+          
+          </ul>
+        </li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+  
+  
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="container hero-content">
+      <div class="hero-text">
+        <h1>Bhagya Patel</h1>
+        <h2>Computer Science Engineering Student</h2>
+        <p>Passionate about creating innovative solutions and building scalable applications. Combining technical
+          expertise with problem-solving skills to develop efficient software solutions.</p>
+        <div class="social-links">
+          <a href="https://www.linkedin.com/in/bhagyapatel/" target="_blank"><i class="fab fa-linkedin"></i></a>
+          <a href="mailto:bhagya20052904@gmail.com"><i class="fas fa-envelope"></i></a>
+          <a href="https://leetcode.com/u/Bhagya_patel_01/" target="_blank"><i class="fas fa-code"></i></a>
+          
+        </div>
+      </div>
+      <!-- <div class="hero-image">
+        <img src="profile.jpg" alt="Bhagya Patel" class="profile-photo">
+      </div> -->
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about">
+    <div class="container">
+      <h2>About Me</h2>
+      <div class="about-content">
+        <div class="about-text">
+          <p>I am a B.Tech student in Computer Engineering at Gujarat Technological University with a strong academic record
+            (CPI: 8.78/10). I have a passion for software development and competitive programming, with notable
+            achievements in various coding platforms.</p>
+          <p>My journey in technology began with a curiosity about how things work, which evolved into a passion for
+            building solutions that can make a difference. I enjoy tackling complex problems and transforming ideas into
+            reality through code.</p>
+
+          <div class="coding-profiles">
+            <h3>Coding Profiles</h3>
+            <ul>
+              <li><i class="fas fa-code"></i> LeetCode: Top 15% , 1.3k views , 550+ Solved Problems</li>
+              <!-- <li><i class="fas fa-code"></i> GeeksForGeeks: Top 1%</li>
+              <li><i class="fas fa-code"></i> Codeforces: 1008 max</li> -->
+            </ul>
+          </div>
+        </div>
+        <div class="education">
+          <h3>Education</h3>
+          <div class="education-item">
+            <div class="education-icon">
+              <i class="fas fa-graduation-cap"></i>
+            </div>
+            <div class="education-details">
+              <h4>B.Tech. in Computer Engineering</h4>
+              <p class="institution">Gujarat Technological University</p>
+              <p class="details">CPI: 8.78/10 | 2022 — 2026</p>
+            </div>
+          </div>
+          <div class="education-item">
+            <div class="education-icon">
+              <i class="fas fa-school"></i>
+            </div>
+            <div class="education-details">
+              <h4>HSC, Science</h4>
+              <p class="institution">Arpan School - Ahmedabad</p>
+              <p class="details"> 2020 — 2022</p>
+            </div>
+          </div>
+          <div class="education-item">
+            <div class="education-icon">
+              <i class="fas fa-school"></i>
+            </div>
+            <div class="education-details">
+              <h4>SSC</h4>
+              <p class="institution">Nishan School - Ahmedabad</p>
+              <p class="details">PR: 99.12 | 2019 — 2020</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Achievements Section -->
+  <section id="achievements" class="achievements">
+    <div class="container">
+      <h2>Achievements & Awards</h2>
+      <div class="achievements-grid">
+        <!-- <div class="achievement-card">
+          <div class="achievement-icon">
+            <i class="fas fa-trophy"></i>
+          </div>
+          <h3>Amazon Future Engineer</h3>
+          <p>Selected among 500 scholars from a pool of 8000+ applicants for this prestigious scholarship program.</p>
+        </div> -->
+        <div class="achievement-card">
+          <div class="achievement-icon">
+            <i class="fas fa-trophy"></i> 
+          </div>
+          <h3>Competitive Examination</h3>
+          <p>NSTSE 2021: Achieved <b>All India Rank 553 (Top 1%)</b> and <b>State Rank 37</b> in the National Level Science Talent Examination.</p> <!-- Customize this text -->
+        </div>
+        
+        <div class="achievement-card">
+          <div class="achievement-icon">
+            <i class="fas fa-award"></i>
+          </div>
+          <h3>LeetCode Achievement</h3>
+          <p>Ranked among the top 4.2% of participants worldwide on LeetCode</p>
+          <p>Over <b>1.3k views</b> on submitted solutions</p>
+          <p>Solved 550+ problems across various data structures and algorithms</p>
+        </div>
+        <!-- <div class="achievement-card">
+          <div class="achievement-icon">
+            <i class="fas fa-certificate"></i>
+          </div>
+          <h3>BNY Mellon Code Divas'23</h3>
+          <p>Finalist in this prestigious coding competition for women in technology.</p>
+        </div>
+        <div class="achievement-card">
+          <div class="achievement-icon">
+            <i class="fas fa-star"></i>
+          </div>
+          <h3>Academic Excellence</h3>
+          <p>Recipient of 3 Silver Medals for Outstanding Academic Performance in consecutive years.</p>
+        </div>
+        <div class="achievement-card">
+          <div class="achievement-icon">
+            <i class="fas fa-code"></i>
+          </div>
+          <h3>Hackathon</h3>
+          <p>Certified by duhacks 2.0, a national-level hybrid hackathon with over 500 participants.</p>
+        </div>
+        <div class="achievement-card">
+          <div class="achievement-icon">
+            <i class="fas fa-graduation-cap"></i>
+          </div>
+          <h3>FLY-Scholar Program</h3>
+          <p>Successfully completed the FLY-Scholar program by The Competitiveness Mindset Institute, USA, developing
+            key non-cognitive skills.</p>
+        </div>
+        <div class="achievement-card">
+          <div class="achievement-icon">
+            <i class="fas fa-trophy"></i>
+          </div>
+          <h3>Bhashathon Achievement</h3>
+          <p>Team Global Optimia secured Top 6 position in Bhashathon by IIT Bombay, winning ₹5K prize for IV ASR Output
+            Correction system.</p>
+        </div>
+        <div class="achievement-card">
+          <div class="achievement-icon">
+            <i class="fas fa-users"></i>
+          </div>
+          <h3>Mentorship Programs</h3>
+          <p>Selected as a mentee in prestigious programs: Navgurukul, Codess Cafe, and FLY-Scholar program.</p>
+        </div> -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section id="experience" class="experience">
+    <div class="container" >
+      <h2>Work Experience</h2>
+      <div class="experience-item">
+        <div class="experience-header">
+          <div>
+            <h3>Software Developer - Freelancer</h3>
+            <h4>BHIT HUB</h4>
+            <p class="date">Oct 2024 - Present | Ahmedabad</p>
+          </div>
+          <!-- <a href="https://drive.google.com/file/d/17YbiNNkiGzMFoGdTuUInTf61gAqAXYIG/view?usp=sharing" target="_blank"
+            class="certificate-link">
+            <i class="fas fa-certificate"></i> View Certificate
+          </a> -->
+        </div>
+        
+  
+        <ul>
+            <li>Developed an AI Invoice Generator that extracts relevant data from input text or paragraphs and automatically generates invoices, streamlining business processes.</li> 
+         <li> Built a customized chatbot for a B2B client, enabling real-time interaction and instant resolution of customer queries.</li> 
+         <li>   Integrated an AI Assistant using LangChain into an Angular project, enhancing automation and interactivity.</li>
+          <li>  Leveraged Crawl4AI for data scraping, improving search engine visibility by 50% through optimized content.</li>
+          
+            <!-- <li>Gained expertise in LangChain, LlamaIndex, AI-driven automation, and NLP-based data extraction while working on 5+ diverse projects. -->
+         <li> Developed a B2B website using Angular with over 20+ dynamic components, ensuring a seamless user experience.</li>
+           <!-- Worked on a hotel website built with WordPress (Divi), implementing 10+ client-requested modifications for improved functionality. -->
+          <!-- Built SEO-friendly content by leveraging Crawl4AI, ensuring 50% better search engine visibility. -->
+            <!-- Developed and optimized dynamic web applications using Angular and React.js, including Bhit Hub’s official website with 25+ reusable components, improving website load times by 15%. -->
+           <li>Managed 30+ tasks efficiently using  Skype for project tracking and execution.</li>
+           
+          </ul>
+          
+      
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="projects">
+    <div class="container">
+      <h2>Projects</h2>
+      <div class="project-grid">
+
+
+        <div class="project-card">
+
+          <div class="project-content">
+            <h3>Frontend / Backend Projects</h3>
+            <div class="project-features">
+              <h4>Projects:</h4>
+              <br/>
+              <ul>
+                <li>Client SenClient-Sentiment-Tracker</li>
+                <li>Smartnavigator</li>
+                <li>Virtual-Chemistry-lab</li>
+                <li>Color Contrast Checker</li>
+              </ul>
+            </div>
+            <br/>
+            <div class="tech-stack">
+              <span>React.js</span>
+              <span>Angular.js</span>
+              <span>Node.js</span>
+              <span>MongoDB</span>
+              <span>Express.js</span>
+              <span>Tailwind CSS</span>
+            </div>
+            <div class="btn-container">
+              <a href="projects-web.html" target="_blank" class="animated-btn">
+                <span>View projects</span>
+              </a>
+            </div>
+            
+          </div>
+        </div>
+
+
+        <div class="project-card">
+       
+          <div class="project-content">
+            <h3>AI Projects</h3>
+            <div class="project-features">
+              <h4>Projects:</h4>
+              <br/>
+              <ul>
+                <li>KarmAI-AI-Agent</li>
+                <li>NewsLens AI Powered Dashboard</li>
+                <li>AI Powered-Web Scraping Data Extraction System</li>
+               
+              </ul>
+            </div>
+            <br/>
+            <div class="tech-stack">
+              <span>Langchain</span>
+              <span>LLamaIndex</span>
+              <span>Gemini API</span>
+              <span>OpenAI API</span>
+              <span>GROQ API</span>
+              <span>Web Scrapping</span>
+            </div>
+            <div class="btn-container">
+              <a href="projects-ai.html" target="_blank" class="animated-btn">
+                <span>View projects</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- Gesture Talk -->
+        <div class="project-card">
+       
+          <div class="project-content">
+            <h3>Machine Learning / Deep Learning</h3>
+            <div class="project-features">
+              <h4>Projects:</h4>
+              <br/>
+              <ul>
+                <li>Diamond-Price-Predictor</li>
+                <li>Vehicle-Valuation-Hub</li>
+                       
+              </ul>
+            </div>
+            <br/>
+            <div class="tech-stack">
+              <span>Scikit-learn</span>
+              <span>NumPy</span>
+              <span>Pandas</span>
+              <span>Matplotlib</span>
+              <span>Tensorflow</span>
+              <span>Keras</span>
+              <span>Streamlit</span>
+            </div>
+            <div class="btn-container">
+              <a href="projects-ml.html" target="_blank" class="animated-btn">
+                <span>View projects</span>
+              </a>
+            </div>
+           
+          </div>
+        </div>
+    
+        <!-- <div class="project-card">
+
+          <div class="project-content">
+            <h3>Freelancing Projects</h3>
+            <div class="project-features">
+              <h4>Projects:</h4>
+              <br/>
+              <ul>
+                <li>BHIT HUB Website</li>
+                <li>Exilon Website</li>
+                <li>Hotel API</li>
+                <li>Kiridin Gardern</li>
+                <li>AI Invoice Generator</li>
+              </ul>
+            </div>
+            <br/>
+         
+            
+          </div>
+        </div> -->
+
+        <!-- <div class="project-card">
+
+          <div class="project-content">
+            <h3>Group Projects</h3>
+            <div class="project-features">
+              <h4>Projects:</h4>
+              <br/>
+              <ul>
+                <li>NextGen Furnishings & Digital Store</li>
+             
+              </ul>
+            </div>
+            <br/>
+            <div class="tech-stack">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+              <span>Node.js</span>
+              <span>AR/VR view</span>
+             
+            </div>
+            <div class="btn-container">
+              <a href="projects-web.html" target="_blank" class="animated-btn">
+                <span>View projects</span>
+              </a>
+            </div>
+            
+          </div>
+        </div> -->
+
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="skills">
+    <div class="container">
+      <h2>Technical Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-category">
+          <h3>Computer Science</h3>
+          <ul>
+            <li>Competitive Programming</li>
+            <li>Data Structures and Algorithms</li>
+            <li>Object-Oriented Programming</li>
+            <li>Software Engineering</li>
+            <li>Database Management</li>
+            <li>System Design</li>
+          </ul>
+        </div>
+        <div class="skill-category">
+          <h3>Programming Languages</h3>
+          <ul>
+            <li>Java </li>
+            <li>Python</li>
+            <li>JavaScript </li>
+            <li>Typescript</li>
+            <li>SQL</li>
+          </ul>
+          <h3>Tools & Technologies</h3>
+          <ul>
+            <li>Git & GitHub</li>
+            <li>Postman</li>
+            <li>MongoDB</li>
+            <li>Skype / Teams</li>
+
+          </ul>
+        </div>
+        <div class="skill-category">
+          <h3>Frontend / Backend Frameworks & Libraries</h3>
+          <ul>
+            <li>React.js</li>
+            <li>Angular.js</li>
+            <li>Next.js</li>
+            <li>Bootstrap</li>
+            <li>Tailwind CSS</li>
+            <li>Sass</li>
+            <li>Node.js</li>
+            <li>Express.js</li>
+            <li>Spring Boot (RestAPI)</li>
+            <li>Django (RestAPI)</li>
+           <li>Strapi5</li>
+          
+          </ul>
+        </div>
+        <div class="skill-category">
+          <h3>AI/ML Frameworks & Libraries</h3>
+          <ul>
+            <li>React.js</li>
+            <li>Angular.js</li>
+            <li>Next.js</li>
+            <li>Bootstrap</li>
+            <li>Tailwind CSS</li>
+            <li>Sass</li>
+            <li>Node.js</li>
+            <li>Express.js</li>
+            <li>Spring Boot (RestAPI)</li>
+            <li>Django (RestAPI)</li>
+           <li>Strapi5</li>
+          
+          </ul>
+        </div>
+       
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2>Get In Touch</h2>
+      <div class="contact-content">
+        <div class="contact-info">
+          <div class="contact-item">
+            <i class="fas fa-envelope"></i>
+            <p>bhagya20052904@gmail.com</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Bhagya Patel. All rights reserved.</p>
+      <div class="social-links" style="justify-content: center; margin-top: 20px;">
+       
+        <a href="https://www.linkedin.com/in/bhagyapatel/" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="mailto:bhagya20052904@gmail.com"><i class="fas fa-envelope"></i></a>
+        <a href="https://leetcode.com/u/Bhagya_patel_01/" target="_blank"><i class="fas fa-code"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
